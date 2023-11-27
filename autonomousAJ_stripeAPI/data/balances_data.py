@@ -12,7 +12,7 @@ class Balances_Data:
     def get_and_process_data(self):
         data = self.balances.get_balances()
         df = pd.DataFrame(data)
-        return df
+        print(df)
 
     def save_data(self, df):
         # df.to_csv(FILE_PATH, index=False)
